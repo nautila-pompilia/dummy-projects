@@ -22,7 +22,7 @@ body {
 
 .container {
   margin: auto;
-  width: 1200px;
+  width: 1400px;
   padding-left: 20px;
   padding-right: 20px;
   outline: 2px solid tomato;
@@ -104,6 +104,20 @@ body {
 
 .hero {
   text-align: center;
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("./free-nature-images.jpg");
 }
 .hero-title {
   margin-top: 0;
@@ -153,6 +167,20 @@ body {
   font-size: 24px;
   line-height: 1.5;
 }
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+
+/*1400 - 150 = 1250 /2 625*/
+
+.feature-list > .item {
+  margin: 40px 75px;
+  width: 600px;
+}
+
 .feature-list .link {
   color: var(--accent-color);
 }
@@ -167,10 +195,20 @@ body {
 .work-list > .item {
   padding-top: 80px;
   padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-bg-color);
 }
 
 .work-list > .item:nth-child(2n) {
   background-color: var(--secondary-bg-color);
+  flex-direction: row-reverse;
+}
+.work-list > .item:nth-child(2n + 1) .content {
+  margin-left: 84px;
+}
+.work-list > .item:nth-child(2n) > .content {
+  margin-right: 84px;
 }
 
 /* Examples */
@@ -181,6 +219,23 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
+}
+
+.section-description {
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  text-wrap: wrap;
+  width: 1020px;
+  margin: -30px -45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.client-list li {
+  margin: 30px 45px;
 }
 
 .button {
