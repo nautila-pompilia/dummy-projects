@@ -114,7 +114,7 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
-      rgba(255, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 255, 0.5)
     ),
     url("./free-nature-images.jpg");
@@ -273,4 +273,43 @@ body {
 .social > .label {
   font-size: 15px;
   line-height: 1.6;
+}
+
+.btn-test {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-test:hover,
+.btn-test:focus {
+  background-color: palevioletred;
+}
+.btn-test::befpre {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: red;
+  background-image: url("");
+}
+/* Image in a spot*/
+
+.list-item::before {
+  display: block;
+  content: "";
+  height: 80px;
+  outline: 1px solid red;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.list-item:nth-child(1)::before {
+  background-image: url(""); /*image 1*/
+}
+.list-item:nth-child(2)::before {
+  background-image: url(""); /*image 2*/
 }
