@@ -313,3 +313,33 @@ body {
 .list-item:nth-child(2)::before {
   background-image: url(""); /*image 2*/
 }
+
+.icon-svg {
+  width: 100px;
+  height: 100px;
+}
+.icon-svg .letter:hover {
+  fill: currentColor;
+}
+.icon-svg .letter {
+  fill: blue;
+}
+.icon-svg .background {
+  fill: pink;
+}
+
+.actions {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
+  list-style: none;
+}
+.actions button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-image: url("cloud-svgrepo-com.svg");
+}
