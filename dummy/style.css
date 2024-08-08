@@ -335,11 +335,15 @@ body {
   outline: 1px solid black;
   list-style: none;
 }
-.actions button {
-  display: block;
-  width: 40px;
-  height: 40px;
+.button {
   padding: 0;
-  border: none;
-  background-image: url("cloud-svgrepo-com.svg");
+  border: 0;
+  width: 100px;
+  height: 100px;
+  color: #2a2a2a;
+  border-radius: 50%;
+  background-color: teal;
+}
+.button .button-icon {
+  fill: currentColor;
 }
